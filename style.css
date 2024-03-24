@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  color: #0054ac;
+}
+
+.loader {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000;
+  z-index: 100;
+}
+
+.loading-star {
+  position: relative;
+  color: #1996f8;
+  font-size: 50px;
+  -webkit-text-stroke: 2px #7cfaff;
+  animation: spin 1.5s infinite cubic-bezier(.72,-0.27,.35,1.32);
+}
+
+.loading-star::before {
+  content: '\f005';
+  font-family: fontAwesome;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+    text-shadow: none;
+  }
+  100% {
+    transform: rotate(1turn);
+    text-shadow: 0 0 10px #1996f8, 0 0 20px #1996f8, 0 0 50px #1996f8;
+  }
+}
+
+.loading-text {
+  position: relative;
+  color: #fff;
+  font-family: "Protest Riot", sans-serif;
+  font-style: normal;
+  font-weight: 100;  
+  letter-spacing: 0.25rem;
+  padding-top: 10px;
+}
+
+.star-background {
+  position: relative;
+  background-image: linear-gradient(#E7FFFF, #6EECFE, #15A7FA);
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.star-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#000d5b, #19108b, #322ca1, #6d55bb, #b592cc);
+  background-attachment: fixed;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.dark-mode::before {
+  opacity: 1;
+}
+
+.star {
+  position: absolute;
+  top: -15vh;
+  color: #1996f8;
+  text-shadow: 0 0 5px #1996f8, 0 0 20px #1996f8, 0 0 50px #1996f8;
+  -webkit-text-stroke: 2px #7cfaff;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.star::before {
+  content: '\f005';
+  font-family: fontAwesome;
+}
+
+.pop {
+  position: absolute;
+  color: #ffa;
+  z-index: 3;
+  animation: poof 0.5s ease-out forwards;
+}
+
+.pop::before {
+  content: '\f005';
+  font-family: fontAwesome;
+}
+
+.trail {
+  position: absolute;
+  color: #ffa;
+  font-size: 5px;
+  z-index: 2;
+  animation: poof 1s ease-out forwards;
+}
+
+.trail::before {
+  content: '\f005';
+  font-family: fontAwesome;
+}
+
+@keyframes poof {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#toggleTheme {
+  position: fixed;
+  font-size: 1.8rem;
+  cursor: pointer;
+  top: 20px;
+  left: 24px;
+  border-radius: 100%;
+  z-index: 5;
+}
+
+#toggleTheme:hover {
+  padding: 9px 10px;
+  transform: translate(-10px, -9px);
+}
