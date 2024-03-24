@@ -6,7 +6,7 @@
 - HTML, CSS & JS
 
 # Demo
-[]()
+[https://2ly.link/1xCSQ](https://2ly.link/1xCSQ)
 
 <img src="https://github.com/cuberoy/star-fall/blob/main/demo.gif">
 
