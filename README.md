@@ -1,6 +1,6 @@
 # About
 - Spinning star loading page
-- Spinning star falling into page with trail
+- Falling star animation with trail
 - Interactive star pops when user clicks on it
 - Dark and light theme for the gradient sky background
 - HTML, CSS & JS
