@@ -6,7 +6,7 @@
 - HTML, CSS & JS
 
 # Demo
-[https://2ly.link/1xCSQ](https://2ly.link/1xCSQ)
+[https://app.cuberoy.com/star-fall](https://app.cuberoy.com/star-fall)
 
 <img src="https://github.com/cuberoy/star-fall/blob/main/demo.gif">
 
